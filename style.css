@@ -183,27 +183,32 @@ color:gray;
 
 .hero{
 background-image:url("assets/BG-mobile.jpg");
+min-height:85vh;
 
 align-items:flex-start;
 
 padding-top:120px;
-padding-left:25px;
-padding-right:25px;
+padding-left:20px;
+padding-right:20px;
 
 background-position:center;
 }
 
 .hero h1{
-font-size:2.2rem;
+font-size:2rem;
 }
 
-/* MOBILE OVERLAY */
+.hero-content{
+padding-left:20px;
+padding-right:20px;
+}
 
 .overlay{
 background:linear-gradient(
 to top,
-rgba(0,0,0,0.9) 40%,
-transparent 80%
+rgba(0,0,0,0.85) 25%,
+rgba(0,0,0,0.4) 50%,
+transparent 70%
 );
 }
 
