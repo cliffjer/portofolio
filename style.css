@@ -66,14 +66,19 @@ body {
   color: white;
 }
 
+.hero{
+height:100vh;
+background-image:url("assets/BG-desktop.jpg");
+background-size:cover;
+background-position:center;
+}
 
-.hero {
-  height: 100vh;
-  background: url(assets/BG.jpg) center / cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  z-index:1;
+@media (max-width:768px){
+
+.hero{
+background-image:url("assets/BG-mobile.jpg");
+}
+
 }
 
 .overlay {
