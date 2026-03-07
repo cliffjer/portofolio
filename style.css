@@ -76,7 +76,14 @@ background-position:center;
 
 .hero{
 background-image:url("assets/BG-mobile.jpg");
-  aling-items:flex-start;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero{
+    aling-items:flex-start;
   padding-top:120px;
   padding-left:25px;
   padding-right:25px;
