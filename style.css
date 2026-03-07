@@ -183,7 +183,7 @@ color:gray;
 
 .hero{
 background-image:url("assets/BG-mobile.jpg");
-min-height:85vh;
+min-height:75vh;
 
 align-items:flex-start;
 
@@ -195,7 +195,8 @@ background-position:center;
 }
 
 .hero h1{
-font-size:2rem;
+font-size:1.9rem;
+line-height:1.2;
 }
 
 .hero-content{
