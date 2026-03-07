@@ -1,3 +1,5 @@
+/* RESET */
+
 *{
 margin:0;
 padding:0;
@@ -8,16 +10,17 @@ font-family:Inter, sans-serif;
 body{
 background:#000;
 color:white;
-margin:0;
 }
 
 /* LOGO */
+
 .Logo{
 width:55px;
 height:auto;
 }
 
-/* OPENING */
+/* OPENING ANIMATION */
+
 #opening{
 position:fixed;
 top:0;
@@ -41,24 +44,34 @@ pointer-events:none;
 width:150px;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero{
 position:relative;
 display:flex;
 align-items:center;
 min-height:100vh;
+
 background-image:url("assets/BG-desktop.jpg");
 background-size:cover;
-background-position:center;
+background-position:70% center;
 }
 
-/* overlay gradient */
+/* GRADIENT OVERLAY */
+
 .overlay{
 position:absolute;
 inset:0;
-background:linear-gradient(to right, black 40%, transparent);
+
+background:linear-gradient(
+to right,
+rgba(0,0,0,0.9) 25%,
+rgba(0,0,0,0.5) 50%,
+transparent 70%
+);
 }
+
+/* HERO CONTENT */
 
 .hero-content{
 position:relative;
@@ -99,18 +112,18 @@ font-size:2.2rem;
 margin-bottom:30px;
 }
 
-/* GRID */
+/* GRID LAYOUT */
 
 .Visi-misi-grid,
 .skills-grid,
 .Prestasi-grid,
 .project-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-/* CARD */
+/* CARD STYLE */
 
 .Visi-misi-card,
 .skill-card,
@@ -127,7 +140,7 @@ transition:0.3s;
 transform:translateY(-8px);
 }
 
-/* BORDER */
+/* BORDER STYLE */
 
 .Visi{border-left:4px solid #fff;}
 .Misi{border-left:4px solid #fff;}
@@ -164,20 +177,34 @@ padding:30px;
 color:gray;
 }
 
-/* MOBILE */
+/* MOBILE VERSION */
 
 @media (max-width:768px){
 
 .hero{
 background-image:url("assets/BG-mobile.jpg");
+
 align-items:flex-start;
+
 padding-top:120px;
 padding-left:25px;
 padding-right:25px;
+
+background-position:center;
 }
 
 .hero h1{
 font-size:2.2rem;
+}
+
+/* MOBILE OVERLAY */
+
+.overlay{
+background:linear-gradient(
+to top,
+rgba(0,0,0,0.9) 40%,
+transparent 80%
+);
 }
 
 }
