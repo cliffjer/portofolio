@@ -1,7 +1,3 @@
-document.querySelector(".menu-btn").onclick = () =>{
-document.querySelector(".sidebar").classList.toggle("active")
-}
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
