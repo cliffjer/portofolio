@@ -178,9 +178,13 @@ padding-right:20px;
 
 .overlay{
 background:linear-gradient(
-to top,
-rgba(0,0,0,0.9) 40%,
-transparent 80%
+to bottom,
+rgba(0,0,0,0.2) 0%,
+rgba(0,0,0,0.35) 55%,
+rgba(0,0,0,0.7) 85%,
+rgba(0,0,0,0.95) 100%
+);
+}
 );
 }
 
