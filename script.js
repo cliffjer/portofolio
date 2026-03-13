@@ -14,7 +14,3 @@ window.addEventListener("load", () => {
     document.getElementById("opening").classList.add("fade-out");
   }, 1500);
 });
-
-document.querySelector(".menu-btn").onclick = function(){
-document.getElementById("sidebar").classList.toggle("active");
-}
